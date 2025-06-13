@@ -19,8 +19,15 @@ title: "Giấy mời Tiệc kỷ niệm"
 <section class="rsvp">
   <h2>RSVP</h2>
   <form action="https://formspree.io/f/manjoagn" method="POST">
-    <!-- Redirect về trang Cảm ơn sau khi gửi -->
-    <input type="hidden" name="_next" value="https://duongwt.github.io/ex4mple.github.io/thanks.html" />
+    <!-- Honeypot chống spam (đừng bỏ) -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <!-- Tiêu đề email bạn nhận được -->
+    <input type="hidden" name="_subject" value="RSVP từ e‑invite Tiệc kỷ niệm" />
+
+    <!-- Redirect sau khi gửi -->
+    <input type="hidden" name="_next" 
+           value="https://duongwt.github.io/ex4mple.github.io/thanks.html" />
 
     <p>
       <input type="text" name="name" placeholder="Họ và tên" required>
