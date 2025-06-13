@@ -1,0 +1,5 @@
+# Cấu hình Jekyll cơ bản
+title: "Trang cá nhân của Bạn"
+description: "Website tĩnh sử dụng Jekyll trên GitHub Pages"
+baseurl: "/ex4mple.github.io"    # với project page
+url: "https://duongwt.github.io" # phần domain chính

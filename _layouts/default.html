@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+  <nav style="background:#333;padding:10px;text-align:center;">
+    <a href="{{ '/' | relative_url }}" style="color:#fff;margin:0 15px;text-decoration:none;">Trang chủ</a>
+    <a href="{{ '/about.html' | relative_url }}" style="color:#fff;margin:0 15px;text-decoration:none;">Giới thiệu</a>
+    <a href="{{ '/contact.html' | relative_url }}" style="color:#fff;margin:0 15px;text-decoration:none;">Liên hệ</a>
+  </nav>
+  <main style="padding:20px;">
+    {{ content }}
+  </main>
+</body>
+</html>
