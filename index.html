@@ -15,12 +15,21 @@ title: "Giấy mời Tiệc kỷ niệm"
   <p>Nhà hàng XYZ, 123 Đường ABC, Hà Nội</p>
 </section>
 
-<!-- RSVP Form (Netlify Forms) -->
+<!-- RSVP Form (Formspree) -->
 <section class="rsvp">
   <h2>RSVP</h2>
-  <form name="rsvp" method="POST" data-netlify="true">
-    <p><input type="text" name="name" placeholder="Họ và tên" required></p>
-    <p><input type="email" name="email" placeholder="Email" required></p>
-    <p><button type="submit">Gửi</button></p>
+  <form action="https://formspree.io/f/manjoagn" method="POST">
+    <!-- Redirect về trang Cảm ơn sau khi gửi -->
+    <input type="hidden" name="_next" value="https://duongwt.github.io/ex4mple.github.io/thanks.html" />
+
+    <p>
+      <input type="text" name="name" placeholder="Họ và tên" required>
+    </p>
+    <p>
+      <input type="email" name="_replyto" placeholder="Email" required>
+    </p>
+    <p>
+      <button type="submit">Gửi</button>
+    </p>
   </form>
 </section>
