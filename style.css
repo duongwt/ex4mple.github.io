@@ -28,11 +28,14 @@ body {
 .hero h1 {
   margin: 0;
   font-size: 2.5em;
+  color: #333;           /* đặt màu đậm */
+  text-shadow: none;     /* bỏ bóng trắng phía sau */
 }
 .hero .date {
   margin-top: 10px;
   font-size: 1.1em;
-  color: #f0f0f0;
+  color: #555;           /* màu thô hơn, nhìn rõ */
+  text-shadow: none;
 }
 
 /* 3. Container giới hạn chiều rộng cho nội dung dưới hero */
