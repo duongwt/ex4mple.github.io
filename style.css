@@ -74,7 +74,32 @@ body {
 }
 /* Giới hạn chiều rộng trang */
 body {
-  margin: 0 auto;       /* canh giữa */
-  max-width: 800px;      /* bạn thay 800px bằng kích thước mong muốn */
-  padding: 20px;         /* khoảng đệm xung quanh trang */
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Hero with background banner */
+.hero {
+  position: relative;
+  height: 300px;                      /* chỉnh độ cao banner */
+  background-image: url('images/banner.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  margin-bottom: 40px;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+.hero .date {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #f0f0f0;
 }
