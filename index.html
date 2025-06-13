@@ -1,12 +1,26 @@
 ---
 layout: default
-title: "Trang chủ"
+title: "Giấy mời Tiệc kỷ niệm"
 ---
 
-<h1>Chào mừng đến với trang của Bạn!</h1>
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Tiệc kỷ niệm 10 năm</h1>
+  <p class="date">15 Tháng 7, 2025 &bull; 18:00</p>
+</section>
 
-<figure style="text-align:center; margin-bottom:20px;">
-  <img src="images/avatar.jpg" alt="Ảnh đại diện" width="200" style="border-radius:50%;">
-</figure>
+<!-- Event Details -->
+<section class="details">
+  <h2>Địa điểm</h2>
+  <p>Nhà hàng XYZ, 123 Đường ABC, Hà Nội</p>
+</section>
 
-<p>Đây là trang web tĩnh đầu tiên của tôi trên GitHub Pages.</p>
+<!-- RSVP Form (Netlify Forms) -->
+<section class="rsvp">
+  <h2>RSVP</h2>
+  <form name="rsvp" method="POST" data-netlify="true">
+    <p><input type="text" name="name" placeholder="Họ và tên" required></p>
+    <p><input type="email" name="email" placeholder="Email" required></p>
+    <p><button type="submit">Gửi</button></p>
+  </form>
+</section>
