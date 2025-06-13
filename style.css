@@ -1,23 +1,48 @@
+/* 1. Reset và font chung */
 body {
-  font-family: 'Merriweather', serif;
-}
-/* Minimalist Hero */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-}
-.hero h1 {
-  font-size: 2.5em;
   margin: 0;
-  color: #333;
-}
-.hero .date {
-  font-size: 1.2em;
-  color: #666;
-  margin-top: 10px;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  background-color: #fafafa;
+  line-height: 1.6;
 }
 
-/* Details & RSVP Sections */
+/* 2. Hero full‑width với background‑image */
+.hero {
+  position: relative;
+  width: 100vw;                  /* full viewport width */
+  left: 50%;
+  transform: translateX(-50%);
+  height: 300px;                 /* chỉnh cao banner tùy ý */
+  background-image: url('images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       /* canh dọc giữa */
+  align-items: center;           /* canh ngang giữa */
+  color: #fff;                   /* chữ trắng nổi bật */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  margin-bottom: 40px;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+.hero .date {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #f0f0f0;
+}
+
+/* 3. Container giới hạn chiều rộng cho nội dung dưới hero */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 4. Style cho Details & RSVP Sections */
 .details,
 .rsvp {
   max-width: 600px;
@@ -35,7 +60,7 @@ body {
   color: #555;
 }
 
-/* Form styling */
+/* 5. Form styling */
 .rsvp form {
   display: flex;
   flex-direction: column;
@@ -61,45 +86,4 @@ body {
 }
 .rsvp button:hover {
   background-color: #555;
-}
-/* Banner full‑width, fixed height */
-.banner {
-  margin: 20px 0;           /* khoảng cách với các section */
-}
-.banner-img {
-  display: block;           /* để loại bỏ khoảng trắng dưới ảnh */
-  width: 100%;              /* full width */
-  height: 200px;            /* điều chỉnh cao bao nhiêu là vừa */
-  object-fit: cover;        /* cắt ảnh nếu panel quá nhỏ */
-}
-/* Giới hạn chiều rộng trang */
-body {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 20px;
-}
-
-/* Hero with background banner */
-.hero {
-  position: relative;
-  height: 300px;                      /* chỉnh độ cao banner */
-  background-image: url('images/banner.jpg');
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
-  margin-bottom: 40px;
-}
-.hero h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-.hero .date {
-  margin-top: 10px;
-  font-size: 1.1em;
-  color: #f0f0f0;
 }
