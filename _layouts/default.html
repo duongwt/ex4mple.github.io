@@ -10,13 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
   <nav style="background:#333;padding:10px;text-align:center;">
-    <a href="{{ '/' | relative_url }}" style="color:#fff;margin:0 15px;text-decoration:none;">Trang chủ</a>
-    <a href="{{ '/about.html' | relative_url }}" style="color:#fff;margin:0 15px;text-decoration:none;">Giới thiệu</a>
+    <a href="{{ '/' | relative_url }}"        style="color:#fff;margin:0 15px;text-decoration:none;">Trang chủ</a>
+    <a href="{{ '/about.html' | relative_url }}"   style="color:#fff;margin:0 15px;text-decoration:none;">Giới thiệu</a>
     <a href="{{ '/contact.html' | relative_url }}" style="color:#fff;margin:0 15px;text-decoration:none;">Liên hệ</a>
   </nav>
-  <main style="padding:20px;">
+
+  <!-- Container giới hạn chiều rộng cho nội dung -->
+  <div class="container">
     {{ content }}
-  </main>
+  </div>
 </body>
 </html>
