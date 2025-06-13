@@ -12,12 +12,19 @@ title: "Giấy mời Tiệc kỷ niệm"
 <!-- RSVP Form (Formspree) -->
 <section class="rsvp">
   <h2>Thông tin đăng ký</h2>
-  <form action="https://formspree.io/f/manjoagn" method="POST">
-    <input type="text" name="_gotcha" style="display:none">
-    <input type="hidden" name="_subject" value="RSVP từ e‑invite Tiệc kỷ niệm" />
-    <input type="hidden" name="_next" value="https://duongwt.github.io/ex4mple.github.io/thanks.html" />
-    <p><input type="text" name="name" placeholder="Họ và tên" required></p>
-    <p><input type="email" name="_replyto" placeholder="Email" required></p>
-    <p><button type="submit">Gửi</button></p>
-  </form>
+  <form action="https://formsubmit.co/ban.tochuc@example.com" method="POST">
+  <!-- Honeypot chống spam -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Redirect về trang cảm ơn -->
+  <input type="hidden" name="_next" value="https://duongwt.github.io/ex4mple.github.io/thanks.html" />
+
+  <!-- Email auto‑response cho khách -->
+  <input type="hidden" name="_autoresponse" value="Cảm ơn bạn {{name}} đã đăng ký tham dự Tiệc kỷ niệm 10 năm!" />
+
+  <p><input type="text" name="name" placeholder="Họ và tên" required></p>
+  <p><input type="email" name="email" placeholder="Email" required></p>
+  <p><button type="submit">Gửi</button></p>
+</form>
+
 </section>
