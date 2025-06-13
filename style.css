@@ -62,3 +62,13 @@ body {
 .rsvp button:hover {
   background-color: #555;
 }
+/* Banner full‑width, fixed height */
+.banner {
+  margin: 20px 0;           /* khoảng cách với các section */
+}
+.banner-img {
+  display: block;           /* để loại bỏ khoảng trắng dưới ảnh */
+  width: 100%;              /* full width */
+  height: 200px;            /* điều chỉnh cao bao nhiêu là vừa */
+  object-fit: cover;        /* cắt ảnh nếu panel quá nhỏ */
+}
