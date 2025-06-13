@@ -73,20 +73,14 @@ body {
 .rsvp input {
   padding: 10px;
   font-size: 1em;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;          /* viền hơi dày để nhìn rõ */
   border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
-.rsvp button {
-  padding: 12px;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-  cursor: pointer;
-}
-.rsvp button:hover {
-  background-color: #555;
+.rsvp input:focus {
+  outline: none;
+  border-color: #333;              /* đổi màu viền khi focus */
+  box-shadow: 0 0 5px rgba(51,51,51,0.5);  /* thêm bóng mờ xung quanh */
 }
