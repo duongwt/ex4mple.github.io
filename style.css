@@ -72,3 +72,9 @@ body {
   height: 200px;            /* điều chỉnh cao bao nhiêu là vừa */
   object-fit: cover;        /* cắt ảnh nếu panel quá nhỏ */
 }
+/* Giới hạn chiều rộng trang */
+body {
+  margin: 0 auto;       /* canh giữa */
+  max-width: 800px;      /* bạn thay 800px bằng kích thước mong muốn */
+  padding: 20px;         /* khoảng đệm xung quanh trang */
+}
